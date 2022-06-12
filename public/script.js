@@ -1,6 +1,6 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
-const myPeer = new Peer({
+const myPeer = new Peer( 20 ,{
     secure: true,
     host: 'face2face-webcams.herokuapp.com/',
     port: 9000,
