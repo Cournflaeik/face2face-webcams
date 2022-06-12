@@ -1,0 +1,192 @@
+@import url("https://use.typekit.net/bqn7uyo.css");
+* {
+    color: #020444;
+    font-family: agenda-one, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33.2%);
+    grid-auto-rows: 300px;
+    gap: 2px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons-wrap {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    left: 42.3vw;
+    bottom: 3vh;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* popups.scss */
+
+.body__call{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.pop{
+    padding: 2rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    white-space: wrap;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.323);
+    
+}
+
+.pop__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pop__text{
+    color: #020444;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.pop__text__title{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.pop__text__text{
+    padding-top: 1rem;
+}
+
+.pop__text__timer{
+    margin-top: -2.2rem;
+    margin-right: -0.9rem;
+}
+
+.pop--statement, .pop--opinion, .pop--sended{
+    display: none;
+}
+
+.pop__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.pop__input{
+    margin: 1rem 0;
+    width: 30rem;
+    height: 10.19rem;
+    background-color: none;
+    border-radius: 5px;
+    border-color: #00438E;
+}
+
+.pop__rightAlignement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pop__btn{
+    background-color: #00438E;
+    color: #F5F5F5;
+    width:7.12rem;
+    height: 2rem;
+    border-radius: 7px;
+    border-color: none;
+    float: right;
+    margin-right: 0px
+}
+
+.pop__btn--hidden{
+    visibility: hidden;
+}
+/*
+input[type=radio]{
+    display: none
+}
+
+
+.pop__radios{
+    position: fixed;
+}
+.pop__radios input[type=radio]:focus + label {
+    color: green;
+    border: 2px;
+}
+
+.pop__radios input[type=radio]:checked + label {
+    background-color: #76cf9f;
+    border-color: #666;
+  }
+
+
+.pop__radios label:hover {
+    background-color: #b1e3c1;
+  }
+  */
+
+  .pop__radios input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 2px;
+  }
+  .pop__radio{
+    padding: 1rem; 
+    margin: 1rem 0;
+    display: block;
+    width: 90%;
+    background-color: white;
+    color: #00438E;
+    border: 1px solid;
+    border-color:rgba(2, 4, 68, 0.323);
+  }
+
+  .pop__radios label:hover{
+    background-color: #484eb608;
+  }
+
+  .pop--others{
+      display: none;
+  }
+
+  .pop--sended{
+      display: none;
+  }
+
+  .pop--givenStatement{
+      display: none;
+  }
+
+  .hide{
+      display: none;
+  }

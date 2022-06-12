@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/webcams.css">
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+    </script>
+    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body >
+    <div id="video-grid"></div>
+    
+    <div id="popup">
+        <div class="pop pop--statement">
+            <div class="pop__header">
+                <h1 class="pop__text pop__text__title">Stelling</h1>
+                <p class="pop__text pop__text__text pop__text__timer pop__text__timer--statement">5</p>
+            </div>
+            <p class="pop__text pop__text__text">De overheid heeft het recht om te beslissen over ons lichaam. Zo mogen ze ons verplichten om ons te laten vaccineren.<br> Wat vindt jij?</p>
+        </div>
+
+        <div class="pop__giveOpinion">
+            <div class="pop pop--opinion">
+                <div class="pop__header">
+                    <h1 class="pop__text pop__text__title pop__text__title--opinion">Wat is jouw mening over deze stelling?</h1>
+                    <p class="pop__text pop__text__text pop__text__timer pop__text__timer--opinion">15</p>
+                </div>
+                    <div class="error pop__error">
+                        <p>Je tekstvak kan niet leeg verzonden worden.</p>
+                    </div>
+                <div class="pop__form">
+                    <input type="text" class="pop__input">
+                    <div class="pop__rightAlignement">
+                        <button class="pop__btn--hidden"></button>
+                        <button class="pop__btn" onclick="runclicked(event)">Verzenden</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pop pop--sended">
+                <div class="pop__header">
+                    <h1 class="pop__text pop__text__title">Je mening is verzonden</h1>
+                    <p class="pop__text pop__text__text pop__text__timer pop__text__timer--opinion--wait">8</p>
+                </div>
+                <p class="pop__text pop__text__text">Wacht nog even op de keuze van de anderen.</p>
+            </div>
+        </div>
+
+        <div class="pop pop--others">
+            <div class="pop__header">
+                <h1 class="pop__text pop__text__title pop__text__title--others">Welke mening wil je het liefst uitgebreider bespreken?</h1>
+                <p class="pop__text pop__text__text pop__text__timer pop__text__timer--others">10</p>
+            </div>
+            <div class="pop__form">
+                <div class="pop__radios">
+                    <label class="pop__radio"><input type="radio" value="Ik vind van niet" name="othersOpinion" class="opinionBtn">Ik vind van niet</label>
+                </div>
+                <div class="pop__rightAlignement">
+                    <button class="pop__btn--hidden"></button>
+                    <button class="pop__btn" onclick="runclicked(event)">Bevestigen</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop pop--givenStatement">
+            <div class="pop__header">
+                <h1 class="pop__text pop__text__title">Dit is de gekozen stelling:</h1>
+                <p class="pop__text pop__text__text pop__text__timer pop__text__timer--statement">10</p>
+            </div>
+            <p class="pop__text pop__text__text">Ik vind van niet</p>
+        </div>
+
+    </div>
+
+    
+    
+
+
+
+
+
+    <div class="buttons-wrap">
+        <img src="call_buttons.svg" alt="call buttons">
+    </div>
+</body>
+</html>

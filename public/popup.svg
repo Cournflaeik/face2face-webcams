@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407" height="145" viewBox="0 0 407 145">
+  <defs>
+    <filter id="Rectangle_273" x="0" y="0" width="407" height="145" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#2f5656"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_66" data-name="Group 66" transform="translate(-470 -289)">
+    <g transform="matrix(1, 0, 0, 1, 470, 289)" filter="url(#Rectangle_273)">
+      <g id="Rectangle_273-2" data-name="Rectangle 273" transform="translate(9 6)" fill="#fff" stroke="#00438e" stroke-width="1">
+        <rect width="389" height="127" rx="7" stroke="none"/>
+        <rect x="0.5" y="0.5" width="388" height="126" rx="6.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Een_17_jarig_meisje_is_onverwachts_zwanger_en_wil_abortus_plegen." data-name="Een 17 jarig meisje is onverwachts zwanger en wil abortus plegen." transform="translate(505 329)" fill="#012f61" font-size="20" font-family="AgendaOne-Medium, Agenda One" font-weight="500"><tspan x="0.42" y="18">Een 17 jarig meisje is onverwachts zwanger </tspan><tspan x="80.18" y="41">en wil abortus plegen.</tspan></text>
+    <text id="_10" data-name="10" transform="translate(844 408)" fill="#012f61" font-size="20" font-family="AgendaOne-Medium, Agenda One" font-weight="500"><tspan x="-8.32" y="0">10</tspan></text>
+  </g>
+</svg>
