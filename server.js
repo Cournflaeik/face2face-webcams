@@ -28,7 +28,10 @@ app.get('/:room', (req, res) => {
 })
 
 io.on('connection', socket => {
+    console.log('1');
     socket.on('join-room', (roomId, userId) => {
+        console.log('2');
+
         socket.join(roomId)
         socket.to(roomId).emit('user-connected', userId)
 
