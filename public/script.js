@@ -4,6 +4,7 @@ const myPeer = new Peer({
     secure: false,
     host: 'face2face-webcams.herokuapp.com/',
     port: 9000,
+    path: '/',
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
