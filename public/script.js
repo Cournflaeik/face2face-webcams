@@ -3,7 +3,7 @@ const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
     secure: true,
     host: 'https://face2face-webcams.herokuapp.com/',
-    port: '9000',
+    port: 9000,
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
